@@ -39,4 +39,12 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+    public String imprimir(){
+        return "============" +
+                "\nCpf: " + cpf +
+                "\nNome: " + nome +
+                "\nEndereço: " + endereco;
+
+    }
+
 }

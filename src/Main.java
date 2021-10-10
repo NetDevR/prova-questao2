@@ -10,7 +10,7 @@ public class Main {
 
         int menu;
         String pCpf, pNome, pEndereco;
-        String lisbn, ltitulo, lautor, leditora, ledicao, lstatus;
+        String lIsbn, lTitulo, lAutor, lEditora, lEdicao, lStatus;
 
 
         Pessoa objpessoa;
@@ -54,22 +54,27 @@ public class Main {
                     System.out.println("Entrando no cadastro de livros...");
 
                     System.out.println("Insira o ISBN do livro: ");
-                    entrada.nextLine();
+                    lIsbn = entradaString.nextLine();
 
                     System.out.println("Digite o título do livro: ");
-                    entradaString.nextLine();
+                    lTitulo = entradaString.nextLine();
 
                     System.out.println("Digite o nome do autor: ");
-                    entradaString.nextLine();
+                    lAutor = entradaString.nextLine();
 
                     System.out.println("Digite o nome da editora: ");
-                    entradaString.nextLine();
+                    lEditora = entradaString.nextLine();
 
                     System.out.println("Digite o número da edição do livro: ");
-                    entrada.nextInt();
+                    lEdicao = entradaString.nextLine();
 
-                    objlivro = new Livro(lisbn, ltitulo, lautor, leditora, ledicao, lstatus); // linha com problema
+                    System.out.println("Digite o status do livro: ");
+                    lStatus = entradaString.nextLine();
+
+                    objlivro = new Livro(lIsbn, lTitulo, lAutor, lEditora, lEdicao, lStatus); // linha com problema
                     ArrayLivros.cadastrar(objlivro);
+
+                    System.out.println("Livro cadastrado!");
 
                     break;
 
