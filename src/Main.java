@@ -68,7 +68,7 @@ public class Main {
                     System.out.println("Digite o número da edição do livro: ");
                     entrada.nextInt();
 
-                    objlivro = new Livro();
+                    objlivro = new Livro(lisbn, ltitulo, lautor, leditora, ledicao, lstatus); // linha com problema
                     ArrayLivros.cadastrar(objlivro);
 
                     break;
